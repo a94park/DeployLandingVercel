@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import { FaLinkedin, FaGithub, FaEnvelope, FaFilePdf } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 import Skills from "./Skills.jsx";
@@ -32,7 +32,7 @@ const Landing = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 10 }}>
-          <h1>Hi, I'm Abraham!</h1>
+          <h1>Hi, I'm Abraham!!</h1>
           <h3>
             A full-stack developer in progress,<br></br> eager to build my
             skillset further.
