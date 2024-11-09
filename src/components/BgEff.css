@@ -37,7 +37,6 @@ section {
   height: 100%;
   overflow: hidden;
   z-index: -1;
-  /* pointer-events: all; */
 }
 
 #root {
@@ -87,4 +86,52 @@ section {
 }
 #hexagonGrid .row .hexagon:hover::after {
   background: #000000;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+/* Adjust hexagon grid for small screens */
+@media screen and (max-width: 768px) {
+  #hexagonGrid .row .hexagon {
+    width: 60px;
+    height: 66px;
+    margin: 3px 1px;
+  }
+
+  /* Optional: Adjust the layout of rows for smaller screens */
+  #hexagonGrid .row {
+    margin-top: -25px;
+    margin-left: -35px;
+  }
+
+  /* Adjust particles canvas to fit smaller screen */
+  #particles {
+    background: #000;
+  }
+
+  /* Root element remains on top */
+  #root {
+    z-index: 2;
+  }
+}
+
+/* Adjust layout for very small screens like mobile phones in portrait mode */
+@media screen and (max-width: 480px) {
+  #fpsMeter {
+    display: none;
+  }
+  /* Reduce hexagon size further */
+  #hexagonGrid {
+    display: none;
+  }
+
+  /* Adjust particles canvas and root positioning */
+  #particles {
+    display: none;
+  }
+
+  #root {
+    z-index: 2;
+    background-color: #000;
+  }
 }
