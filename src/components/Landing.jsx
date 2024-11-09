@@ -44,18 +44,18 @@ const Landing = () => {
       <Element name="contact" className=" section contact-section">
         <div className="social-icons">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/abraham-park-b5b55131b"
             target="_blank"
             rel="noopener noreferrer">
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/yourprofile"
+            href="https://https://github.com/a94park"
             target="_blank"
             rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="mailto:yourname@example.com">
+          <a href="mailto:a.p.00@icloud.com">
             <FaEnvelope />
           </a>
         </div>
