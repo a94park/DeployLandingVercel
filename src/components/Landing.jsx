@@ -50,7 +50,7 @@ const Landing = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://https://github.com/a94park"
+            href="https://github.com/a94park"
             target="_blank"
             rel="noopener noreferrer">
             <FaGithub />
