@@ -10,12 +10,12 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Project One",
-      description: "A full-stack web application for ...",
+      title: "Career Connect",
+      description: "Tinder for businesses and jobseekers",
       details:
-        "Built with React, Node.js, and MySQL. This project features ...",
-      githubLink: "https://github.com/yourprofile/project-one",
-      liveLink: "https://project-one.com",
+        "Originally built with React, Node.js, and MySQL, the project is currently being refactored for deployment with Next.js and Vercel, optimizing database integration.",
+      githubLink: "https://github.com/a94park/Career-Connect",
+      liveLink: "https://career-connect-six.vercel.app/",
     },
     {
       id: 2,
