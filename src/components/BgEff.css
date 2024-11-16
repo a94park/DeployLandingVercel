@@ -123,11 +123,13 @@ section {
   /* Reduce hexagon size further */
   #hexagonGrid {
     display: none;
+    background-color: #000;
   }
 
   /* Adjust particles canvas and root positioning */
   #particles {
     display: none;
+    background-color: #000;
   }
 
   #root {
