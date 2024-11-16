@@ -13,16 +13,16 @@ function Projects() {
       title: "Career Connect",
       description: "Tinder for businesses and jobseekers",
       details:
-        "Originally built with React, Node.js, and MySQL, the project is currently being refactored for deployment with Next.js and Vercel, optimizing database integration.",
+        "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Currently, the project runs on a locally hosted database, but I am working on hosting a public database for demonstration purposes. This project showcases collaborative skills in building scalable, secure, and user-friendly applications.",
       githubLink: "https://github.com/a94park/Career-Connect",
       liveLink: "https://career-connect-six.vercel.app/",
+      bgpic: "/banner2.jpg",
     },
     {
       id: 2,
       title: "Project Two",
-      description: "A mobile app developed using ...",
-      details:
-        "Created with React Native and Firebase. Key features include ...",
+      description: "coming soon ...",
+      details: "coming soon ...",
       githubLink: "https://github.com/yourprofile/project-two",
       liveLink: "https://project-two.com",
     },
@@ -44,9 +44,14 @@ function Projects() {
           key={project.id}
           className="project-card"
           onClick={() => handleOpenModal(project)}
-          whileHover={{ scale: 1.05 }}>
-          <p>{project.title}</p>
-          <p>{project.description}</p>
+          whileHover={{ scale: 1.05 }}
+          style={{
+            backgroundImage: `url(${project.bgpic})`,
+          }}>
+          <div className="card-content">
+            <p>{project.title}</p>
+            <p>{project.description}</p>
+          </div>
         </motion.div>
       ))}
 
@@ -56,25 +61,88 @@ function Projects() {
         onRequestClose={handleCloseModal}
         className="project-modal"
         ariaHideApp={false}
-        style={{ overlay: { background: "rgba(0,0,0,0.5)" } }}>
-        {/* overlayClassName="project-modal-overlay"> */}
+        style={{
+          overlay: { background: "rgba(0,0,0,0.5)" },
+          content: {
+            backgroundImage: selectedProject
+              ? `url(${selectedProject.bgpic})`
+              : "none",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            borderRadius: "8px",
+            padding: "20px",
+            color: "white",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          },
+        }}>
         {selectedProject && (
           <div>
-            <h2>{selectedProject.title}</h2>
-            <p>{selectedProject.details}</p>
+            <h2
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
+                padding: "15px",
+                borderRadius: "8px",
+                color: "#72c100",
+
+                margin: "10px",
+              }}>
+              {selectedProject.title}
+            </h2>
+            <p
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
+                padding: "15px",
+                borderRadius: "8px",
+                marginBottom: "20px",
+                lineHeight: "1.5",
+              }}>
+              {selectedProject.details}
+            </p>
             <a
               href={selectedProject.githubLink}
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
+                padding: "15px",
+                borderRadius: "8px",
+                color: "#72c100",
+                textDecoration: "underline",
+                margin: "10px",
+              }}>
               GitHub
             </a>
             <a
               href={selectedProject.liveLink}
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
+                padding: "15px",
+                borderRadius: "8px",
+                color: "#72c100",
+                textDecoration: "underline",
+                margin: "10px",
+              }}>
               Live Demo
             </a>
-            <button onClick={handleCloseModal}>Close</button>
+            <button
+              onClick={handleCloseModal}
+              style={{
+                position: "absolute",
+                bottom: "20px",
+                right: "20px",
+                background: "#f00",
+                color: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                padding: "10px 15px",
+                cursor: "pointer",
+              }}>
+              Close
+            </button>
           </div>
         )}
       </Modal>
