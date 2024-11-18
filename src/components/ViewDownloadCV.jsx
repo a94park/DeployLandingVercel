@@ -26,8 +26,8 @@ const ViewDownloadCV = () => {
         }}>
         <div className="modal-buttons">
           <a
-            href="/AbrahamCV.pdf"
-            download="AbrahamCV"
+            href="/AbrahamCVwLinks.pdf"
+            download="AbrahamCVwLinks"
             className="download-cv-btn">
             <FaFilePdf /> Download
           </a>
