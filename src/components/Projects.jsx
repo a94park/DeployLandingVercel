@@ -13,7 +13,7 @@ function Projects() {
       title: "Career Connect",
       description: "Tinder for businesses and jobseekers",
       details:
-        "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Currently, once logged in, the dashboard link is having some issues. Also, styling and responsiveness needs a lot of work.",
+        "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Deployed using AWS EC2. Currently, once logged in, the dashboard link is having some issues. Also, styling and responsiveness needs a lot of work.",
       githubLink: "https://github.com/a94park/Career-Connect",
       liveLink: "http://52.78.120.51/",
       bgpic: "/banner2.jpg",
