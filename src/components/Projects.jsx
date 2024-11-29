@@ -15,7 +15,7 @@ function Projects() {
       details:
         "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Currently, once logged in, the dashboard link is having some issues. Also, styling and responsiveness needs a lot of work.",
       githubLink: "https://github.com/a94park/Career-Connect",
-      liveLink: "http://http://52.78.120.51/",
+      liveLink: "http://52.78.120.51/",
       bgpic: "/banner2.jpg",
     },
     {
