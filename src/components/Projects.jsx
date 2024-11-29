@@ -13,9 +13,9 @@ function Projects() {
       title: "Career Connect",
       description: "Tinder for businesses and jobseekers",
       details:
-        "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Currently, the project runs on a locally hosted database, but I am working on hosting a public database for demonstration purposes. This project showcases collaborative skills in building scalable, secure, and user-friendly applications.",
+        "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Currently, once logged in, the dashboard link is having some issues. Also, styling and responsiveness needs a lot of work.",
       githubLink: "https://github.com/a94park/Career-Connect",
-      liveLink: "https://career-connect-six.vercel.app/",
+      liveLink: "http://http://52.78.120.51/",
       bgpic: "/banner2.jpg",
     },
     {
