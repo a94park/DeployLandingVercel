@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import { FaFilePdf } from "react-icons/fa";
+import "./Landing.scss";
 
 const ViewDownloadCV = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
