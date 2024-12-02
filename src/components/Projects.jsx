@@ -1,8 +1,7 @@
 import Modal from "react-modal";
 import { motion } from "framer-motion";
 import { useState } from "react";
-// Modal.setAppElement("#root");
-
+import "./Landing.scss";
 function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);

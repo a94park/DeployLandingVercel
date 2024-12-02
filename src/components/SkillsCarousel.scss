@@ -1,0 +1,92 @@
+.skills-carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  margin: 5% 0;
+
+  // Fade effect
+  .fade {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20%; /* Make the fade wider for a more gradual effect */
+    pointer-events: none; /* Allow clicks to pass through */
+    background: linear-gradient(to left, transparent, black);
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 0;
+      background: linear-gradient(to right, transparent, black);
+    }
+  }
+
+  // Scroll buttons
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #a5ff5664;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+
+    &.left {
+      left: -50px; /* Move outside the fade area */
+    }
+
+    &.right {
+      right: -50px; /* Move outside the fade area */
+    }
+
+    &:hover {
+      background-color: #70b53364;
+    }
+  }
+
+  // Skills container
+  .skills-container {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    scrollbar-width: none; /* For Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* For Chrome and Safari */
+    }
+  }
+
+  // Individual skill cards
+  .skill-card {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 60px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    p {
+      margin-top: 7px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+}

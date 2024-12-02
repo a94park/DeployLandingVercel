@@ -2,9 +2,9 @@ import { Element } from "react-scroll";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-import Skills from "./Skills.jsx";
 import Projects from "./Projects.jsx";
 import ViewDownloadCV from "./ViewDownloadCV.jsx";
+import SkillsCarousel2 from "./SkillsCarousel2.jsx";
 import "./Landing.scss";
 
 const Landing = () => {
@@ -27,11 +27,8 @@ const Landing = () => {
         </nav>
       </header> */}
 
-      <Element name="about" className="interactive section about-section">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 10 }}>
+      <Element name="about" className="about-section">
+        <motion.div>
           <h1>Hi, I'm Abraham!!</h1>
           <h3>
             A full-stack developer in progress,<br></br> eager to build my
@@ -41,7 +38,7 @@ const Landing = () => {
       </Element>
 
       {/* Contact Section */}
-      <Element name="contact" className=" section contact-section">
+      <Element name="contact" className="contact-section">
         <div className="social-icons">
           <a
             href="https://linkedin.com/in/abraham-park-b5b55131b"
@@ -61,11 +58,8 @@ const Landing = () => {
         </div>
       </Element>
       <ViewDownloadCV />
-      <div className="section skills-and-projects-containter">
-        <Element name="skills" className="skills-section">
-          <h2>Skills</h2>
-          <Skills />
-        </Element>
+      <SkillsCarousel2 />
+      <div className="skills-and-projects-containter">
         <Element name="projects" className="projects-section">
           <h2>Projects</h2>
           <Projects />
