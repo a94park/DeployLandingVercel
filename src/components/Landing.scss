@@ -1,6 +1,6 @@
-.portfolio-container > * {
-  pointer-events: all;
-}
+// .portfolio-container > * {
+//   pointer-events: all;
+// }
 
 .portfolio-container {
   font-family: Arial, sans-serif;
@@ -10,6 +10,11 @@
   align-items: center;
   z-index: 4;
   text-align: center;
+  pointer-events: none;
+  .last-update {
+    width: 100%;
+    text-align: left;
+  }
   .about-section {
     margin: 5%;
     line-height: 30px;

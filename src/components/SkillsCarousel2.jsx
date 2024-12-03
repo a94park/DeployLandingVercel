@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import skills from "./SkillsData.js"; // Importing your skills data
+import skills from "./SkillsData.jsx";
 
 import "./Landing.scss";
 import "./SkillsCarousel.scss";

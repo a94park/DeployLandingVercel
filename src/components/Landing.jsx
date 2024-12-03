@@ -1,44 +1,22 @@
-import { Element } from "react-scroll";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { motion } from "framer-motion";
-
-import Projects from "./Projects.jsx";
 import ViewDownloadCV from "./ViewDownloadCV.jsx";
 import SkillsCarousel2 from "./SkillsCarousel2.jsx";
+import Projects from "./Projects.jsx";
 import "./Landing.scss";
-
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      {/* <header className="portfolio-header">
-        <nav>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-          <Link to="projects" smooth={true} duration={500}>
-            Projects
-          </Link>
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </nav>
-      </header> */}
-
-      <Element name="about" className="about-section">
-        <motion.div>
-          <h1>Hi, I'm Abraham!!</h1>
-          <h3>
-            A full-stack developer in progress,<br></br> eager to build my
-            skillset further.
-          </h3>
-        </motion.div>
-      </Element>
+      <div className="last-update">Last update: 3 Dec 2024</div>
+      <div className="about-section">
+        <h1>Hi, I'm Abraham!!</h1>
+        <h3>
+          A full-stack developer in progress,<br></br> eager to build my
+          skillset further.
+        </h3>
+      </div>
 
       {/* Contact Section */}
-      <Element name="contact" className="contact-section">
+      <div className="contact-section">
         <div className="social-icons">
           <a
             href="https://linkedin.com/in/abraham-park-b5b55131b"
@@ -56,10 +34,9 @@ const Landing = () => {
             <FaEnvelope />
           </a>
         </div>
-      </Element>
+      </div>
       <ViewDownloadCV />
       <SkillsCarousel2 />
-
       <Projects />
     </div>
   );

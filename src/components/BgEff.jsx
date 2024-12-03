@@ -157,7 +157,6 @@ const ParticleHexagonCanvas = () => {
     <>
       <canvas id="particles" ref={canvasRef} />
       <div id="hexagonGrid" ref={hexagonGridRef} />
-      <div id="hexagonGridOverlay"></div>
     </>
   );
 };
