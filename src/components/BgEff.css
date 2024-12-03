@@ -29,7 +29,7 @@
   margin-left: 0px;
 }
 #hexagonGrid .row:nth-child(even) {
-  margin-left: -47px;
+  margin-left: -48px;
 }
 #hexagonGrid .row .hexagon {
   position: relative;

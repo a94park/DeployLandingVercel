@@ -5,6 +5,7 @@
   width: 70%;
   margin: 1% 0 5% 0;
 
+  // Fading effect for visual boundaries
   .fade {
     position: absolute;
     border-radius: 10px;
@@ -12,20 +13,22 @@
     bottom: 0;
     width: 20%;
     background: linear-gradient(to left, transparent, black);
+    pointer-events: none; // Ensure this doesn't block interactions
+
     &.left {
       left: 0;
     }
+
     &.right {
       right: 0;
       background: linear-gradient(to right, transparent, black);
     }
   }
 
+  // Scroll buttons for navigation
   .scroll-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #a5ff5664;
+    background-color: rgba(165, 255, 86, 0.4);
     border: none;
     border-radius: 20px;
     font-size: 1.5rem;
@@ -33,55 +36,68 @@
     padding: 10px;
 
     &.left {
-      left: -50px; /* Move outside the fade area */
+      left: -50px; // Positioned outside the fade area
     }
 
     &.right {
-      right: -50px; /* Move outside the fade area */
+      right: -50px; // Positioned outside the fade area
     }
 
     &:hover {
-      background-color: #70b53364;
+      background-color: rgba(112, 181, 51, 0.4); // Subtle hover effect
     }
   }
 
-  // Skills container
+  // Container for skills
   .skills-container {
     display: flex;
     gap: 20px;
-
+    user-select: none;
     overflow-x: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
     padding: 20px;
-    scrollbar-width: none; /* For Firefox */
+    scrollbar-width: none; // For Firefox
+
     &::-webkit-scrollbar {
-      display: none; /* For Chrome and Safari */
+      display: none; // For Chrome and Safari
+    }
+
+    // Apply cursor changes during dragging
+    cursor: grab;
+    &.dragging {
+      cursor: grabbing;
     }
   }
 
   // Individual skill cards
   .skill-card {
-    scroll-snap-align: center;
-    flex: 0 0 auto;
+    flex: 0 0 auto; // Prevent shrinking or growing
     width: 80px;
     height: 80px;
     text-align: center;
     background-color: transparent;
     border-radius: 50%;
     padding: 10px;
-    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
+    // Skill logos
     img {
       width: 60px;
       height: 50px;
       object-fit: contain;
+      pointer-events: none; // Prevent default drag behavior
     }
 
+    // Skill names
     p {
       margin-top: 7px;
       font-size: 0.8rem;
       font-weight: bold;
+      color: #fff; // Add better contrast for visibility
+    }
+
+    // Add optional hover effect for visual feedback
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s ease;
     }
   }
 }

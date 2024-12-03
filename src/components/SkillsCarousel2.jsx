@@ -1,60 +1,79 @@
-import { useRef } from "react";
-// https://worldvectorlogo.com/
-import htmllogo from "../assets/html-1.svg";
-import csslogo from "../assets/css-3.svg";
-import jslogo from "../assets/logo-javascript.svg";
-import pythonlogo from "../assets/python-5.svg";
-import reactlogo from "../assets/react-2.svg";
-import njslogo from "../assets/nodejs-1.svg";
-import sasslogo from "../assets/sass-1.svg";
-import flasklogo from "../assets/flask.svg";
-import jwtlogo from "../assets/jwt-3.svg";
-import mysqllogo from "../assets/mysql-3.svg";
-import awslogo from "../assets/aws-2.svg";
-import nginxlogo from "../assets/nginx-1.svg";
-import gunicornlogo from "../assets/gunicorn.svg";
+import { useRef, useState, useEffect } from "react";
+import skills from "./SkillsData.js"; // Importing your skills data
 
 import "./Landing.scss";
 import "./SkillsCarousel.scss";
 
 function SkillsCarousel2() {
   const skillsRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
-  // Scroll left function
-  const scrollLeft = () => {
+  // Scroll buttons
+  const scrollByCards = (direction) => {
     const cardWidth = skillsRef.current.children[0].offsetWidth;
-    const scrollDistance = cardWidth * 3; // Adjust the scroll by 3 cards
+    const scrollDistance = cardWidth; // Adjust the scroll by 1 card
     skillsRef.current.scrollBy({
-      left: -scrollDistance,
+      left: direction * scrollDistance,
       behavior: "smooth",
     });
   };
 
-  // Scroll right function
-  const scrollRight = () => {
-    const cardWidth = skillsRef.current.children[0].offsetWidth;
-    const scrollDistance = cardWidth * 3; // Adjust the scroll by 3 cards
-    skillsRef.current.scrollBy({
-      left: scrollDistance,
-      behavior: "smooth",
-    });
+  // Drag functions
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - skillsRef.current.offsetLeft);
+    setScrollLeft(skillsRef.current.scrollLeft);
+    skillsRef.current.classList.add("dragging");
   };
 
-  const skills = [
-    { id: 1, name: "HTML", logo: htmllogo },
-    { id: 2, name: "CSS", logo: csslogo },
-    { id: 3, name: "JavaScript", logo: jslogo },
-    { id: 4, name: "Python", logo: pythonlogo },
-    { id: 5, name: "React", logo: reactlogo },
-    { id: 6, name: "Node.js", logo: njslogo },
-    { id: 7, name: "Sass", logo: sasslogo },
-    { id: 8, name: "Flask", logo: flasklogo },
-    { id: 9, name: "JWT", logo: jwtlogo },
-    { id: 10, name: "MySQL", logo: mysqllogo },
-    { id: 11, name: "AWS", logo: awslogo },
-    { id: 12, name: "Nginx", logo: nginxlogo },
-    { id: 13, name: "Gunicorn", logo: gunicornlogo },
-  ];
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - skillsRef.current.offsetLeft;
+    const walk = x - startX; // Distance moved
+    skillsRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    skillsRef.current.classList.remove("dragging");
+  };
+
+  useEffect(() => {
+    // Add mouseUp listener to the whole document to handle when the mouse is outside the container
+    const handleMouseUpOutside = () => {
+      if (isDragging) {
+        setIsDragging(false);
+        skillsRef.current.classList.remove("dragging");
+      }
+    };
+
+    // Listen for mouseMove and mouseUp events
+    document.addEventListener("mouseup", handleMouseUpOutside);
+
+    // Remove event listener on cleanup
+    return () => {
+      document.removeEventListener("mouseup", handleMouseUpOutside);
+    };
+  }, [isDragging]);
+
+  useEffect(() => {
+    const container = skillsRef.current;
+    const handleScroll = () => {
+      const cardWidth = container.children[0].offsetWidth;
+      const scrollPosition = container.scrollLeft;
+      if (scrollPosition >= cardWidth * skills.length) {
+        container.scrollLeft = cardWidth * skills.length - 1;
+      }
+      if (scrollPosition <= 0) {
+        container.scrollLeft = 0;
+      }
+    };
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -63,20 +82,30 @@ function SkillsCarousel2() {
         VPSs, and other tools I have worked with.
       </h3>
       <div className="skills-carousel">
-        <button className="scroll-btn left" onClick={scrollLeft}>
+        <button className="scroll-btn left" onClick={() => scrollByCards(-1)}>
           ◀
         </button>
         <div className="fade left"></div>
-        <div className="skills-container" ref={skillsRef}>
+        <div
+          className={`skills-container ${isDragging ? "dragging" : ""}`}
+          ref={skillsRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          style={{ cursor: isDragging ? "grabbing" : "grab" }}>
           {skills.map((skill) => (
             <div key={skill.id} className="skill-card">
-              <img src={skill.logo} alt={`${skill.name} logo`} />
+              <img
+                src={skill.logo}
+                alt={`${skill.name} logo`}
+                draggable="false"
+              />
               <p>{skill.name}</p>
             </div>
           ))}
         </div>
         <div className="fade right"></div>
-        <button className="scroll-btn right" onClick={scrollRight}>
+        <button className="scroll-btn right" onClick={() => scrollByCards(1)}>
           ▶
         </button>
       </div>
