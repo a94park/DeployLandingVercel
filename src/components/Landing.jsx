@@ -59,12 +59,8 @@ const Landing = () => {
       </Element>
       <ViewDownloadCV />
       <SkillsCarousel2 />
-      <div className="skills-and-projects-containter">
-        <Element name="projects" className="projects-section">
-          <h2>Projects</h2>
-          <Projects />
-        </Element>
-      </div>
+
+      <Projects />
     </div>
   );
 };

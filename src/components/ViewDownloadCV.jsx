@@ -16,7 +16,7 @@ const ViewDownloadCV = () => {
       </button>
 
       <Modal
-        parentSelector={() => document.querySelector(".projects-section")}
+        parentSelector={() => document.querySelector(".portfolio-container")}
         ariaHideApp={false}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

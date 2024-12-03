@@ -3,29 +3,24 @@
   align-items: center;
   position: relative;
   width: 70%;
-  margin: 5% 0;
+  margin: 1% 0 5% 0;
 
-  // Fade effect
   .fade {
     position: absolute;
     border-radius: 10px;
     top: 0;
     bottom: 0;
-    width: 20%; /* Make the fade wider for a more gradual effect */
-    pointer-events: none; /* Allow clicks to pass through */
+    width: 20%;
     background: linear-gradient(to left, transparent, black);
-
     &.left {
       left: 0;
     }
-
     &.right {
       right: 0;
       background: linear-gradient(to right, transparent, black);
     }
   }
 
-  // Scroll buttons
   .scroll-btn {
     position: absolute;
     top: 50%;
