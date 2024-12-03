@@ -23,13 +23,13 @@ const ViewDownloadCV = () => {
         contentLabel="CV Viewer"
         style={{
           overlay: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
-          content: { width: "70%", margin: "auto", maxHeight: "90vh" },
+          content: { width: "70%", margin: "auto", pointerEvents: "auto" },
         }}>
         <div className="modal-buttons">
           <a
             href="/AbrahamCVwLinks.pdf"
             download="AbrahamCVwLinks"
-            className="download-cv-btn">
+            className="modal-download">
             <FaFilePdf /> Download
           </a>
           <button onClick={closeModal} className="close-modal-btn">

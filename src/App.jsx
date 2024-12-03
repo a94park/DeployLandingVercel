@@ -6,9 +6,8 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <Landing />
       <ParticleHexagonCanvas />
-
+      <Landing />
       {/* </ParticleHexagonCanvas> */}
     </>
   );

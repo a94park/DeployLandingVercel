@@ -11,7 +11,7 @@ const ParticleHexagonCanvas = () => {
   // Function to resize canvas and hexagon grid
   const resizeCanvas = () => {
     const canvas = canvasRef.current;
-    const root = canvas.parentElement.parentElement;
+    const root = canvas.parentElement;
     const rootStyles = getComputedStyle(root);
     const rootWidth = parseFloat(rootStyles.width);
     const rootHeight = parseFloat(rootStyles.height);
@@ -117,6 +117,7 @@ const ParticleHexagonCanvas = () => {
       for (let j = 0; j < columnsNumber; j++) {
         const hexagon = document.createElement("div");
         hexagon.className = "hexagon";
+
         row.appendChild(hexagon);
       }
     }
