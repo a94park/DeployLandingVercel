@@ -8,6 +8,8 @@ function App() {
     <>
       <Landing />
       <ParticleHexagonCanvas />
+
+      {/* </ParticleHexagonCanvas> */}
     </>
   );
 }

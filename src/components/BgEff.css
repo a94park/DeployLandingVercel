@@ -1,13 +1,14 @@
 /* Particles canvas styling */
-#particles > * {
+/* #particles > * {
   pointer-events: auto;
-}
+} */
 #particles {
   position: absolute;
   top: 0;
   left: 0;
   background: #000000;
   z-index: -2;
+  pointer-events: auto;
 }
 
 /* Hexagon grid styling */
@@ -20,7 +21,7 @@
   left: 0;
   overflow: hidden;
   z-index: -1;
-  pointer-events: all !important;
+  pointer-events: all;
 }
 
 #hexagonGrid .row {
@@ -37,7 +38,6 @@
   height: 104px;
   margin: 2px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  pointer-events: all !important;
 }
 #hexagonGrid .row .hexagon::before {
   content: "";
@@ -46,10 +46,10 @@
   left: 0;
   width: 100%; /* Match the parent hexagon */
   height: 100%; /* Match the parent hexagon */
-  pointer-events: all !important;
   background: #000000;
   opacity: 0.95;
-  transition: 1s;
+  transition: background-color 1s, opacity 1s;
+  pointer-events: none;
 }
 #hexagonGrid .row .hexagon::after {
   content: "";
@@ -60,17 +60,15 @@
   left: 2px;
   width: 100%; /* Match the parent hexagon */
   height: 100%; /* Match the parent hexagon */
-  pointer-events: all !important;
   background: #141414;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  pointer-events: none;
 }
 #hexagonGrid .row .hexagon:hover::before {
   background: #42c2ff;
   opacity: 1;
   transition: 0s;
-  pointer-events: all !important;
 }
 #hexagonGrid .row .hexagon:hover::after {
   background: #000000;
-  pointer-events: all !important;
 }

@@ -13,7 +13,6 @@
     bottom: 0;
     width: 20%;
     background: linear-gradient(to left, transparent, black);
-    pointer-events: none; // Ensure this doesn't block interactions
 
     &.left {
       left: 0;
