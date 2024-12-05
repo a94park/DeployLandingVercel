@@ -16,7 +16,7 @@ function Projects() {
         "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Deployed using AWS EC2. Currently, once logged in, the dashboard link is having some issues. Also, styling and responsiveness needs a lot of work.",
       githubLink: "https://github.com/a94park/Career-Connect",
       liveLink:
-        "http://http://ec2-43-201-67-146.ap-northeast-2.compute.amazonaws.com/",
+        "http://ec2-43-201-67-146.ap-northeast-2.compute.amazonaws.com/",
       bgpic: "/banner2.jpg",
     },
     {
