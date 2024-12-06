@@ -2,17 +2,19 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import ViewDownloadCV from "./ViewDownloadCV.jsx";
 import SkillsCarousel2 from "./SkillsCarousel2.jsx";
 import Projects from "./Projects.jsx";
+// import Suggestions from "./Suggestions.jsx";
 import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 3 Dec 2024</div>
+      <div className="last-update">Last update: 6 Dec 2024</div>
       <div className="about-section">
         <h1>Hi, I'm Abraham!!</h1>
         <h3>
           A full-stack developer in progress,<br></br> eager to build my
           skillset further.
         </h3>
+        <h3>Currently learning C# with Unity.</h3>
       </div>
 
       {/* Contact Section */}
@@ -38,6 +40,7 @@ const Landing = () => {
       <ViewDownloadCV />
       <SkillsCarousel2 />
       <Projects />
+      {/* <Suggestions /> */}
     </div>
   );
 };

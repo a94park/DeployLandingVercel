@@ -13,7 +13,8 @@ function Projects() {
       description:
         "A simpler, more modern approach to connect businesses with jobseekers",
       details:
-        "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Deployed using AWS EC2. Currently, once logged in, the dashboard link is having some issues. Also, styling and responsiveness needs a lot of work.",
+        "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Deployed using AWS EC2. The pre-deployed code is on Github.",
+      bugs: "Known Bugs: Styling/responsiveness, Employer notifications, Employer job viewer",
       githubLink: "https://github.com/a94park/Career-Connect",
       liveLink: "http://43.201.67.146/",
       bgpic: "/banner2.jpg",
@@ -101,6 +102,17 @@ function Projects() {
                   lineHeight: "1.5",
                 }}>
                 {selectedProject.details}
+              </p>
+              <p
+                style={{
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  padding: "15px",
+                  borderRadius: "8px",
+                  marginBottom: "20px",
+                  lineHeight: "1.5",
+                }}>
+                {" "}
+                {selectedProject.bugs}
               </p>
               <a
                 href={selectedProject.githubLink}
