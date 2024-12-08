@@ -92,29 +92,38 @@
   }
 }
 
-.modal-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .modal-download {
-    background-color: #a4ff56;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px;
-  }
-  .close-modal-btn {
-    height: 30px;
-    width: 60px;
-    border-radius: 5px;
-    background: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
+.cv-modal {
+  border: black 2px solid;
+  background-color: #fff;
+  padding: 1%;
+  border-radius: 5px;
+  overflow-y: auto;
+  .modal-buttons {
+    pointer-events: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .modal-download {
+      background-color: #a4ff56;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    .close-modal-btn {
+      height: 30px;
+      width: 60px;
+      border-radius: 5px;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
   }
 }
+
 .project-modal {
   position: relative;
-  top: 300px;
+  top: 10%;
   width: 60%;
   margin: auto;
 
@@ -124,6 +133,14 @@
   border: 2px solid black;
   outline: none;
   text-align: center;
+  .m-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      height: 40px;
+    }
+  }
   h2 {
     margin-bottom: 1rem;
   }

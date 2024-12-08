@@ -2,6 +2,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 import { FaFilePdf } from "react-icons/fa";
 import "./Landing.scss";
+import MyCV from "./MyCV";
 
 const ViewDownloadCV = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -21,9 +22,16 @@ const ViewDownloadCV = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="CV Viewer"
+        className="cv-modal"
         style={{
           overlay: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
-          content: { width: "70%", margin: "auto", pointerEvents: "auto" },
+          content: {
+            position: "relative",
+            top: "10%",
+            width: "80%",
+            height: "80%",
+            margin: "auto",
+          },
         }}>
         <div className="modal-buttons">
           <a
@@ -36,14 +44,7 @@ const ViewDownloadCV = () => {
             Close
           </button>
         </div>
-
-        <div className="image-container">
-          <img
-            src="/AbrahamCV.png"
-            alt="AbrahamCV"
-            style={{ width: "100%", height: "auto" }}
-          />
-        </div>
+        <MyCV />
       </Modal>
     </div>
   );

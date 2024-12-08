@@ -111,52 +111,50 @@ function Projects() {
                   marginBottom: "20px",
                   lineHeight: "1.5",
                 }}>
-                {" "}
                 {selectedProject.bugs}
               </p>
-              <a
-                href={selectedProject.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  padding: "15px",
-                  borderRadius: "8px",
-                  color: "#72c100",
-                  textDecoration: "underline",
-                  margin: "10px",
-                }}>
-                GitHub
-              </a>
-              <a
-                href={selectedProject.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  padding: "15px",
-                  borderRadius: "8px",
-                  color: "#72c100",
-                  textDecoration: "underline",
-                  margin: "10px",
-                }}>
-                Live Demo
-              </a>
-              <button
-                onClick={handleCloseModal}
-                style={{
-                  position: "absolute",
-                  bottom: "20px",
-                  right: "20px",
-                  background: "#f00",
-                  color: "#fff",
-                  border: "none",
-                  borderRadius: "5px",
-                  padding: "10px 15px",
-                  cursor: "pointer",
-                }}>
-                Close
-              </button>
+              <div className="m-btn-group">
+                <a
+                  href={selectedProject.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.6)",
+                    padding: "10px",
+                    borderRadius: "8px",
+                    color: "#72c100",
+                    textDecoration: "underline",
+                    margin: "10px",
+                  }}>
+                  GitHub
+                </a>
+                <a
+                  href={selectedProject.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.6)",
+                    padding: "10px",
+                    borderRadius: "8px",
+                    color: "#72c100",
+                    textDecoration: "underline",
+                    margin: "10px",
+                  }}>
+                  Live Demo
+                </a>
+                <button
+                  onClick={handleCloseModal}
+                  style={{
+                    background: "#f00",
+                    color: "#fff",
+                    border: "none",
+                    borderRadius: "8px",
+                    padding: "10px",
+                    cursor: "pointer",
+                  }}>
+                  Close
+                </button>{" "}
+              </div>
             </div>
           )}
         </Modal>
