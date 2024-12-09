@@ -2,12 +2,13 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import ViewDownloadCV from "./ViewDownloadCV.jsx";
 import SkillsCarousel2 from "./SkillsCarousel2.jsx";
 import Projects from "./Projects.jsx";
+import Flappy from "./Flappy.jsx";
 // import Suggestions from "./Suggestions.jsx";
 import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 6 Dec 2024</div>
+      <div className="last-update">Last update: 9 Dec 2024</div>
       <div className="about-section">
         <h1>Hi, I'm Abraham!!</h1>
         <h3>
@@ -15,6 +16,9 @@ const Landing = () => {
           skillset further.
         </h3>
         <h3>Currently learning C# with Unity.</h3>
+      </div>
+      <div className="flappy">
+        <Flappy />
       </div>
 
       {/* Contact Section */}

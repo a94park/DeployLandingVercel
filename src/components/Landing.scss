@@ -59,6 +59,10 @@
       margin-right: 8px;
     }
   }
+  #react-unity-webgl-canvas-2 {
+    display: none;
+  }
+
   .projects-container {
     display: flex;
 
@@ -98,16 +102,19 @@
   padding: 1%;
   border-radius: 5px;
   overflow-y: auto;
+
   .modal-buttons {
     pointer-events: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .modal-download {
       background-color: #a4ff56;
       padding: 10px;
       border-radius: 5px;
       margin: 5px;
+      cursor: pointer;
     }
     .close-modal-btn {
       height: 30px;
