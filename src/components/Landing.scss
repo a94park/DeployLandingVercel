@@ -134,8 +134,8 @@
   width: 60%;
   margin: auto;
 
-  padding: 2rem;
-  background: #fff;
+  // padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   border: 2px solid black;
   outline: none;
@@ -164,4 +164,10 @@
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .project-modal {
+    // max-height: ;
+  }
 }

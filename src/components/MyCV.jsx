@@ -40,7 +40,7 @@ function MyCV() {
             <li>Database Management with MySQL</li>
             <li>Hosting Virtual Private Servers with AWS EC2</li>
             <li>Collaborative app development</li>
-            <li>Version Control with Github</li>
+            <li>Version Control with Git</li>
             <li>Problem-solving & adaptability</li>
             <li>Classroom management & teaching</li>
             <li>Inventory management</li>
@@ -61,10 +61,10 @@ function MyCV() {
               My Website:
               <br />
               <a
-                href="https://vercel-deploy-landing-react.vercel.app"
+                href="https://abrahampark.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer">
-                https://vercel-deploy-landing-react.vercel.app
+                https://abrahampark.vercel.app/
               </a>
             </li>
             <li>
@@ -120,7 +120,16 @@ function MyCV() {
               Held daily stand-ups to keep the team progressing consistently
             </li>
             <li>
-              Designed the site interface, user experience, and routing in React
+              Developed the site interface, optimized user experience, and
+              implemented routing using React.
+            </li>
+            <li>
+              Implemented a dynamic Navigation Bar tailored to specific user
+              profiles using React.
+            </li>
+            <li>
+              Built and designed a React-based Jobseeker Notification system for
+              enhanced user engagement.
             </li>
             <li>
               Organized the project’s file structure for efficiency and
@@ -143,8 +152,8 @@ function MyCV() {
               and Gunicorn
             </li>
             <li>
-              Refactoring, remove redundant code for scalibility, management,
-              security, and improve user experience
+              Refactoring, removing redundant code for scalibility, management,
+              security, and improved user experience
             </li>
           </ul>
           <h4>Frontend React+Vite Developement</h4>
@@ -157,7 +166,8 @@ function MyCV() {
             </li>
             <li>
               Showcase my ability to use pre-written code (interactive
-              background) to merge with my own
+              background) to merge with my own while maintaining all
+              functionality
             </li>
             <li>Practice styling with SCSS and creating responsive pages</li>
             <li>

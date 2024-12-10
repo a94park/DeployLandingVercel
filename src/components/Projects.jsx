@@ -98,7 +98,7 @@ function Projects() {
                   backgroundColor: "rgba(0, 0, 0, 0.6)",
                   padding: "15px",
                   borderRadius: "8px",
-                  marginBottom: "20px",
+                  marginBottom: "10px",
                   lineHeight: "1.5",
                 }}>
                 {selectedProject.details}
@@ -108,7 +108,7 @@ function Projects() {
                   backgroundColor: "rgba(0, 0, 0, 0.6)",
                   padding: "15px",
                   borderRadius: "8px",
-                  marginBottom: "20px",
+                  marginBottom: "10px",
                   lineHeight: "1.5",
                 }}>
                 {selectedProject.bugs}
@@ -124,7 +124,7 @@ function Projects() {
                     borderRadius: "8px",
                     color: "#72c100",
                     textDecoration: "underline",
-                    margin: "10px",
+                    margin: "0px",
                   }}>
                   GitHub
                 </a>
