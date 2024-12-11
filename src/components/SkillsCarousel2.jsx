@@ -13,7 +13,7 @@ function SkillsCarousel2() {
   // Scroll buttons
   const scrollByCards = (direction) => {
     const cardWidth = skillsRef.current.children[0].offsetWidth;
-    const scrollDistance = cardWidth; // Adjust the scroll by 1 card
+    const scrollDistance = cardWidth * 2; // Adjust the scroll by 1 card
     skillsRef.current.scrollBy({
       left: direction * scrollDistance,
       behavior: "smooth",
@@ -62,13 +62,13 @@ function SkillsCarousel2() {
   useEffect(() => {
     const container = skillsRef.current;
     const handleScroll = () => {
-      const cardWidth = container.children[0].offsetWidth;
+      const cardWidth = container.children[0].offsetWidth + 5;
       const scrollPosition = container.scrollLeft;
-      if (scrollPosition >= cardWidth * skills.length) {
-        container.scrollLeft = cardWidth * skills.length - 1;
+      if (scrollPosition >= cardWidth * skills.length + 1) {
+        container.scrollLeft = cardWidth * skills.length + 1;
       }
       if (scrollPosition <= 0) {
-        container.scrollLeft = 0;
+        container.scrollLeft = 3;
       }
     };
     container.addEventListener("scroll", handleScroll);

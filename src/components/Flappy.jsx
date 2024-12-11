@@ -2,14 +2,14 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function Flappy() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "Build/flappyweb2.loader.js",
-    dataUrl: "Build/flappyweb2.data.",
-    frameworkUrl: "Build/flappyweb2.framework.js",
-    codeUrl: "Build/flappyweb2.wasm",
+    loaderUrl: "Build/flappyOnReact2.loader.js",
+    dataUrl: "Build/flappyOnReact2.data.br",
+    frameworkUrl: "Build/flappyOnReact2.framework.js.br",
+    codeUrl: "Build/flappyOnReact2.wasm.br",
   });
 
   return (
-    <Unity unityProvider={unityProvider} style={{ width: 800, height: 600 }} />
+    <Unity unityProvider={unityProvider} style={{ width: 500, height: 300 }} />
   );
 }
 

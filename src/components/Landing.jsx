@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import ViewDownloadCV from "./ViewDownloadCV.jsx";
 import SkillsCarousel2 from "./SkillsCarousel2.jsx";
 import Projects from "./Projects.jsx";
-// import Flappy from "./Flappy.jsx";
+import Flappy from "./Flappy.jsx";
 // import Suggestions from "./Suggestions.jsx";
 import "./Landing.scss";
 const Landing = () => {
@@ -17,9 +17,6 @@ const Landing = () => {
         </h3>
         <h3>Currently learning C# with Unity.</h3>
       </div>
-      {/* <div className="flappy">
-        <Flappy />
-      </div> */}
 
       {/* Contact Section */}
       <div className="contact-section">
@@ -42,6 +39,9 @@ const Landing = () => {
         </div>
       </div>
       <ViewDownloadCV />
+      <div className="flappy">
+        <Flappy />
+      </div>
       <SkillsCarousel2 />
       <Projects />
       {/* <Suggestions /> */}

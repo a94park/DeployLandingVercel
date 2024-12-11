@@ -1,6 +1,7 @@
 import Modal from "react-modal";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Flappy from "./Flappy";
 import "./Landing.scss";
 function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -21,11 +22,15 @@ function Projects() {
     },
     {
       id: 2,
-      title: "Project Two",
-      description: "coming soon ...",
-      details: "coming soon ...",
-      githubLink: "https://github.com/yourprofile/project-two",
-      liveLink: "https://project-two.com",
+      title: "Flappy Bird (myVersion)",
+      description:
+        "My attempt at remaking Flappy Bird with some added features.",
+      details:
+        "Fulfilling my dreams as a game developer. I used Unity with C# and followed along a Youtube video by Game Maker's Toolkit. I added the start screen so the game doesn't run upon open, extra points feature, and adjust the speeds to make a little more difficult.",
+      bugs: "Will be adding to this every now and then. No Github, demo is above",
+      githubLink: "",
+      liveLink: "${<Flappy />}",
+      bgpic: "/flappy.png",
     },
   ];
 
@@ -40,7 +45,7 @@ function Projects() {
   };
   return (
     <>
-      <h3>Full-stack Projects</h3>
+      <h3>Projects</h3>
       <div className="projects-container">
         {projects.map((project) => (
           <motion.div

@@ -176,6 +176,19 @@ function MyCV() {
               need.
             </li>
           </ul>
+          <h4>Unity + C# Developement</h4>
+          <p>"Flappy Bird Remake" December 2024</p>
+          <ul>
+            <li>Familiarized myself with basic Unity and C#</li>
+            <li>
+              Implemented the Start Screen logic so the game session knows when
+              to begin
+            </li>
+            <li>Added an extra point system the main game does not have</li>
+            <li>
+              Adjusted the speed to make the game more challenging and enjoyable
+            </li>
+          </ul>
         </section>
         <section className="prof-experience">
           <h3>Professional Experience</h3>
