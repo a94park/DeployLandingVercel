@@ -11,7 +11,13 @@ function Flappy() {
   return (
     <Unity
       unityProvider={unityProvider}
-      style={{ width: 500, height: 300, pointerEvents: "auto" }}
+      style={{
+        width: 500,
+        height: 300,
+        pointerEvents: "auto",
+        marginBottom: "5%",
+        borderRadius: "5px",
+      }}
     />
   );
 }
