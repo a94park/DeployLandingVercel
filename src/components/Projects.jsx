@@ -1,7 +1,6 @@
 import Modal from "react-modal";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Flappy from "./Flappy";
 import "./Landing.scss";
 function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
