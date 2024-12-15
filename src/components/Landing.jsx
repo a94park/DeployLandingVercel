@@ -39,11 +39,13 @@ const Landing = () => {
         </div>
       </div>
       <ViewDownloadCV />
+
+      <SkillsCarousel2 />
+      <Projects />
       <div className="flappy">
         <Flappy />
       </div>
-      <SkillsCarousel2 />
-      <Projects />
+
       {/* <Suggestions /> */}
     </div>
   );

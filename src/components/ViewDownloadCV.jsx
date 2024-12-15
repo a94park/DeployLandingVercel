@@ -57,7 +57,7 @@ const ViewDownloadCV = () => {
             Close
           </button>
         </div>
-        <MyCV />
+        <MyCV className="resume-container" />
       </Modal>
     </div>
   );
