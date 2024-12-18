@@ -27,10 +27,33 @@ function Projects() {
         "My attempt at remaking Flappy Bird with some added features.",
       details:
         "Fulfilling my dreams as a game developer. I used Unity with C# and followed along a Youtube video by Game Maker's Toolkit. I added the start screen so the game doesn't run upon open, extra points feature, and adjust the speeds to make a little more difficult.",
-      bugs: "Will be adding to this every now and then. No Github, demo is above",
-      githubLink: "",
-      liveLink: "",
+      bugs: "Will be adding to this every now and then. No Github, demo is below (might take a minute to load).",
+      // githubLink: "",
+      // liveLink: "",
       bgpic: "/flappy.png",
+    },
+    {
+      id: 3,
+      title: "My Landing Page",
+      description:
+        "Instead of following the usual landing page templates I wanted to showcase my ability to work with pre written code.",
+      details:
+        "I created and deployed my own landing page using React and Vercel, incorporating features such as modals, scrollable carousels, and HTML-to-PDF converters. This project allowed me to showcase my ability to integrate pre-written code, like an interactive background, with my own while maintaining full functionality. Additionally, I practiced styling with SCSS and focused on designing a responsive, user-friendly layout to ensure visitors could easily navigate the site and find the information they needed.",
+      bugs: "Will be adding to this every now and then and when I am able to deploy my new projects.",
+      githubLink: "https://github.com/a94park/DeployLandingVercel",
+      // liveLink: "",
+      bgpic: "/landing.png",
+    },
+    {
+      id: 4,
+      title: "AI Virtual Assistant for Interviews",
+      description: "COMING SOON",
+      // details:
+      //   "",
+      // bugs: "",
+      // githubLink: "",
+      // liveLink: "",
+      // bgpic: "/landing.png",
     },
   ];
 
