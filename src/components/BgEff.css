@@ -26,7 +26,7 @@
 
 #hexagonGrid .row {
   display: inline-flex;
-  margin-top: -28px;
+  margin-top: -32px;
   margin-left: 0px;
 }
 #hexagonGrid .row:nth-child(even) {
@@ -36,6 +36,7 @@
   position: relative;
   width: 90px;
   height: 104px;
+  /* background: #df0808; */
   margin: 2px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   pointer-events: all;
@@ -43,8 +44,12 @@
 #hexagonGrid .row .hexagon::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px; */
+  top: 0px;
+  left: 0px;
   width: 100%; /* Match the parent hexagon */
   height: 100%; /* Match the parent hexagon */
   background: #000000;
@@ -54,17 +59,17 @@
 #hexagonGrid .row .hexagon::after {
   content: "";
   position: absolute;
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  left: 2px;
-  width: 100%; /* Match the parent hexagon */
-  height: 100%; /* Match the parent hexagon */
+  top: 5px;
+  left: 5px;
+  width: 90%; /* Match the parent hexagon */
+  height: 90%; /* Match the parent hexagon */
+  /* background: #df0808; */
   background: #141414;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 #hexagonGrid .row .hexagon:hover::before {
   background: #42c2ff;
+
   opacity: 1;
   transition: 0s;
   pointer-events: none;

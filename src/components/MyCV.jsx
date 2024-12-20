@@ -95,16 +95,15 @@ function MyCV() {
         <section className="profile">
           <h3>Profile</h3>
           <p>
-            Motivated full-stack developer with a background as a
-            Korean-American dual citizen. I began my journey with online courses
-            to build a strong foundation in software development. I then
-            completed a 4-month intensive full-stack bootcamp, sharpening my
-            skills in both front-end and back-end technologies. Since
-            graduation, I’ve focused on furthering my expertise through
-            self-study and hands-on projects. I’m eager to contribute to a
-            growing team in an environment that fosters learning, while
-            expanding my technical skills and adding value to your company’s
-            success.
+            Full-stack developer with a background as a Korean-American dual
+            citizen. I began my journey with online courses to build a a
+            foundation in software development. I then completed a 4-month
+            intensive full-stack bootcamp, increasing my skills in both
+            front-end and back-end technologies. Since graduation, I’ve focused
+            on furthering my knowledge through self-study and hands-on projects.
+            I’m eager to contribute to a growing team in an environment that
+            fosters learning, while expanding my technical skills and adding
+            value to your company’s success.
           </p>
         </section>
         <section className="prog-experience">

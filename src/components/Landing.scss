@@ -23,6 +23,9 @@
     h1 {
       margin-bottom: 20px;
     }
+    h2 {
+      margin-bottom: 20px;
+    }
     h3 {
       margin-bottom: 20px;
     }
@@ -172,6 +175,11 @@
 }
 
 @media (max-width: 600px) {
+  .portfolio-container {
+    .about-section {
+      margin-top: 40%;
+    }
+  }
   .project-modal {
     max-height: 400px;
     overflow-y: auto;
