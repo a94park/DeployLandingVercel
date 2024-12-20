@@ -1,3 +1,3 @@
 # My Landing
 
-# Learning how to deploy using Vercel
+# A personal website to show potential employers my skills, projects, and resume.
