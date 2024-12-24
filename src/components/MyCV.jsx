@@ -96,7 +96,7 @@ function MyCV() {
           <h3>Profile</h3>
           <p>
             Full-stack developer with a background as a Korean-American dual
-            citizen. I began my journey with online courses to build a a
+            citizen. I began my journey with online courses to build a
             foundation in software development. I then completed a 4-month
             intensive full-stack bootcamp, increasing my skills in both
             front-end and back-end technologies. Since graduation, I’ve focused
