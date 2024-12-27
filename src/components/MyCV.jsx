@@ -100,10 +100,12 @@ function MyCV() {
             foundation in software development. I then completed a 4-month
             intensive full-stack bootcamp, increasing my skills in both
             front-end and back-end technologies. Since graduation, I’ve focused
-            on furthering my knowledge through self-study and hands-on projects.
-            I’m eager to contribute to a growing team in an environment that
-            fosters learning, while expanding my technical skills and adding
-            value to your company’s success.
+            on furthering my knowledge through self-study and hands-on projects.{" "}
+            <br />
+            Currently based in South Korea, I am open to relocation globally for
+            the right opportunity. I’m eager to contribute to a growing team in
+            an environment that fosters learning, while expanding my technical
+            skills and adding value to your company’s success.
           </p>
         </section>
         <section className="prog-experience">
