@@ -16,7 +16,7 @@ function MyCV() {
           <p>
             <strong>Location / Relocation:</strong>
             <br />
-            Song-pa, South Korea /<br />
+            Seoul, South Korea /<br />
             Denver, Colorado
             <br />
             Ft. Lauderdale, FL
@@ -36,7 +36,7 @@ function MyCV() {
           <h2>Skills</h2>
           <ul>
             <li>Frontend development with React</li>
-            <li>Backend development with Python & MySQL</li>
+            <li>Backend development with Python</li>
             <li>Database Management with MySQL</li>
             <li>Hosting Virtual Private Servers with AWS EC2</li>
             <li>Collaborative app development</li>
