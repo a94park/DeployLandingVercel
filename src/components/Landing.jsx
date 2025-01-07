@@ -8,13 +8,14 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 28 Dec 2024</div>
+      <div className="last-update">Last update: 7 Jan 2025</div>
       <div className="about-section">
         <h1>Abraham Park</h1>
         <h2>Full-stack Developer</h2>
         <h3>
-          Currently exploring Huggingface and transformers for my virtual
-          assistant chatbot. Demo coming soon.
+          Currently exploring Huggingface transformers, preprocessing, and
+          fine-tuning for my virtual assistant chatbot. Demo coming soon. <br />{" "}
+          Also learning VIM and still trying to do 3-5 LeetCode problems a day.
         </h3>
       </div>
 
