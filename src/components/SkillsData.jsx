@@ -12,6 +12,13 @@ const skills = [
   { id: 11, name: "AWS", logo: "/assets/aws-2.svg" },
   { id: 12, name: "Nginx", logo: "/assets/nginx-1.svg" },
   { id: 13, name: "Gunicorn", logo: "/assets/gunicorn.svg" },
+  { id: 14, name: "C#", logo: "/assets/c--4.svg" },
+  { id: 15, name: "Docker", logo: "/assets/docker-3.svg" },
+  { id: 16, name: "Git", logo: "/assets/git.svg" },
+  { id: 17, name: "Github", logo: "/assets/github-icon-2.svg" },
+  { id: 18, name: "HuggingFace", logo: "/assets/huggingface-2.svg" },
+  { id: 19, name: "Ubuntu", logo: "/assets/ubuntu-4.svg" },
+  { id: 20, name: "Unity", logo: "/assets/unity-69.svg" },
 ];
 
 export default skills;

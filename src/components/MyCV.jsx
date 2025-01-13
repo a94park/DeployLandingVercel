@@ -39,6 +39,7 @@ function MyCV() {
             <li>Backend development with Python</li>
             <li>Database Management with MySQL</li>
             <li>Hosting Virtual Private Servers with AWS EC2</li>
+            <li>Managing VPS's with Ubuntu, Vim, and Docker</li>
             <li>Collaborative app development</li>
             <li>Version Control with Git</li>
             <li>Problem-solving & adaptability</li>
@@ -54,17 +55,18 @@ function MyCV() {
             <li>Korean (intermediate)</li>
           </ul>
         </div>
-        <div className="hobbies">
+
+        <div className="links">
           <h2>Links</h2>
           <ul>
             <li>
               My Website:
               <br />
               <a
-                href="https://abrahampark.vercel.app/"
+                href="https://www.parkabraham.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                https://abrahampark.vercel.app/
+                https://www.parkabraham.com/
               </a>
             </li>
             <li>
@@ -86,6 +88,16 @@ function MyCV() {
                 rel="noopener noreferrer">
                 https://github.com/a94park
               </a>
+            </li>
+          </ul>
+        </div>
+        <div className="hobbies">
+          <h2>Hobbies</h2>
+          <ul>
+            <li>Leetcode, Codewars</li>
+            <li>Exploring latest tech trends</li>
+            <li>
+              Exploring ways to make my projects more scalable and efficient{" "}
             </li>
           </ul>
         </div>
@@ -175,6 +187,29 @@ function MyCV() {
               Designed with user experience in mind, ensuring that visitors can
               intuitively navigate the site and easily find the information they
               need.
+            </li>
+          </ul>
+          <h4>Python Sentence Transformer Chatbot</h4>
+          <p>"Virtual Assistant" January 2024</p>
+          <ul>
+            <li>
+              A virtual assistant chatbot for interviews using Python's
+              Huggingface sentence transformers.
+            </li>
+            <li>
+              Made so that it can be reused on any personal or professional site
+              with minimal set up.
+            </li>
+            <li>
+              Answers questions from a user input based on the information it
+              was trained on.
+            </li>
+            <li>
+              Explored the wide variety of projects and models on Huggingface.
+            </li>
+            <li>
+              Learned about preprocessing, fine-tuning, vector representations,
+              cosine similarity
             </li>
           </ul>
           <h4>Unity + C# Developement</h4>
