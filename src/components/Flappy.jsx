@@ -2,10 +2,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function Flappy() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "Build/flappyOnReact6.loader.js",
-    dataUrl: "Build/flappyOnReact6.data",
-    frameworkUrl: "Build/flappyOnReact6.framework.js",
-    codeUrl: "Build/flappyOnReact6.wasm",
+    loaderUrl: "Build/flappyOnReact10.loader.js",
+    dataUrl: "Build/flappyOnReact10.data",
+    frameworkUrl: "Build/flappyOnReact10.framework.js",
+    codeUrl: "Build/flappyOnReact10.wasm",
   });
 
   return (
@@ -13,7 +13,6 @@ function Flappy() {
       unityProvider={unityProvider}
       style={{
         width: "100%",
-
         height: "auto",
         pointerEvents: "auto",
         marginBottom: "5%",

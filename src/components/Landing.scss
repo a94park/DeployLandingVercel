@@ -31,7 +31,7 @@
     }
     h3 {
       padding: 10px;
-      pointer-events: all;
+      pointer-events: auto;
       background: rgba(43, 255, 0, 0.1);
       width: 70%;
       border: 3px solid rgba(43, 255, 0, 0.2);
@@ -53,6 +53,9 @@
         filter: drop-shadow(0px 4px 20px rgba(164, 255, 86, 0.7));
       }
     }
+  }
+  .chat-container {
+    pointer-events: auto;
   }
   .download-cv-btn {
     margin-bottom: 15%;
@@ -77,14 +80,12 @@
   }
   .resume-container {
     overflow-y: auto;
-    pointer-events: all;
+    pointer-events: auto;
   }
   .projects-container {
     display: flex;
-
-    flex-direction: column;
-    pointer-events: auto;
-
+    flex-wrap: wrap;
+    justify-content: center;
     .project-card {
       margin: 1rem;
       padding: 20px;
@@ -97,6 +98,7 @@
       background-repeat: no-repeat;
       height: 150px;
       width: 240px;
+      pointer-events: auto;
       &:hover {
         filter: drop-shadow(0px 4px 20px rgba(164, 255, 86, 0.7));
       }
@@ -118,7 +120,7 @@
   padding: 1%;
   border-radius: 5px;
   overflow-y: auto;
-
+  pointer-events: auto;
   .modal-buttons {
     pointer-events: auto;
     display: flex;
@@ -150,6 +152,7 @@
   width: 60%;
   max-width: 600px;
   margin: auto;
+  pointer-events: auto;
 
   // padding: 2rem;
   background: rgba(255, 255, 255, 0.7);

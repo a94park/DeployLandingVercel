@@ -3,6 +3,7 @@ import ViewDownloadCV from "./ViewDownloadCV.jsx";
 import SkillsCarousel2 from "./SkillsCarousel2.jsx";
 import Projects from "./Projects.jsx";
 import Flappy from "./Flappy.jsx";
+import Chatbot from "./Chatbot.jsx";
 // import Suggestions from "./Suggestions.jsx";
 import "./Landing.scss";
 const Landing = () => {
@@ -39,6 +40,7 @@ const Landing = () => {
           </a>
         </div>
       </div>
+      <Chatbot />
       <ViewDownloadCV />
 
       <SkillsCarousel2 />
