@@ -9,14 +9,15 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 13 Jan 2025</div>
+      <div className="last-update">Last update: 16 Jan 2025</div>
       <div className="about-section">
         <h1>Abraham Park</h1>
         <h2>Full-stack Developer</h2>
         <h3>
-          Learning how to use Docker and containerizing for more light-weight,
-          scalable deployments. <br /> Also learning VIM and still trying to do
-          3-5 LeetCode problems a day.
+          Deploying backend for the chatbot. Taking a deeper dive into AWS EC2,
+          Lightsail and server configuration with Nginx, Gunicorn, and Apache.
+          <br /> Also learning VIM and still trying to do 3-5 LeetCode problems
+          a day.
         </h3>
       </div>
 

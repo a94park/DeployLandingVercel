@@ -59,7 +59,6 @@ const Chatbot = () => {
 
   const handleChange = (e) => {
     setUserInput(e.target.value);
-    console.log(e.target.value);
   };
 
   useEffect(() => {

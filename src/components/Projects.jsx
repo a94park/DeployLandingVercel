@@ -51,10 +51,10 @@ function Projects() {
         "A chatbot that is trained with a context file and will answer questions based on the context.",
       details:
         "Created with a React front end and python backend, using python's huggingface sentence transformer. Made to be used as any virtual assistant would be used. Can be demoed on my landing page here. It is trained on interview questions and will answer based on my resume and some other personal information. ",
-      // bugs: "",
+      bugs: "Still figuring out how to better fine-tune the model and deploying the backend. No Live Demo link, but can be demoed on my landing page.",
       githubLink: "https://github.com/a94park/python_sent_transformer",
       // liveLink: "",
-      // bgpic: "/landing.png",
+      bgpic: "/chatbot.png",
     },
   ];
 
@@ -103,7 +103,7 @@ function Projects() {
               backgroundPosition: "center",
               borderRadius: "8px",
               padding: "20px",
-              color: "white",
+              // color: "white",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
