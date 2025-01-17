@@ -35,14 +35,22 @@ function MyCV() {
         <div className="skills">
           <h2>Skills</h2>
           <ul>
-            <li>Frontend development with React</li>
-            <li>Backend development with Python</li>
-            <li>Database Management with MySQL</li>
-            <li>Hosting Virtual Private Servers with AWS EC2</li>
-            <li>Managing VPS's with Ubuntu, Vim, and Docker</li>
-            <li>Collaborative app development</li>
-            <li>Version Control with Git</li>
-            <li>Problem-solving & adaptability</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>AWS EC2</li>
+            <li>Git</li>
+            <li>Flask</li>
+            <li>Node.js</li>
+            <li>Ubuntu</li>
+            <li>Vim</li>
+            <li>Docker</li>
+
+            <li>App Development</li>
+            <li>Unity</li>
+
             <li>Classroom management & teaching</li>
             <li>Inventory management</li>
             <li>Team leadership & coordination</li>
@@ -107,102 +115,73 @@ function MyCV() {
         <section className="profile">
           <h3>Profile</h3>
           <p>
-            Full-stack developer with a background as a Korean-American dual
-            citizen. I began my journey with online courses to build a
-            foundation in software development. I then completed a 4-month
-            intensive full-stack bootcamp, increasing my skills in both
-            front-end and back-end technologies. Since graduation, I’ve focused
-            on furthering my knowledge through self-study and hands-on projects.{" "}
-            <br />
-            Currently based in South Korea, I am open to relocation globally for
-            the right opportunity. I’m eager to contribute to a growing team in
-            an environment that fosters learning, while expanding my technical
-            skills and adding value to your company’s success.
+            I am a natural problem solver with a love for puzzles and logical
+            thinking. I value transparency and clear communication, knowing that
+            a lack of detail or specificity is often where problems begin. My
+            goal is to deliver efficient, well-informed solutions while
+            fostering collaboration and trust. While I’d love to stay close to
+            my family in Korea, I’m open to relocating to America for the right
+            opportunity, as I hold dual citizenship.
           </p>
         </section>
         <section className="prog-experience">
           <h3>Programming Experience</h3>
-          <h4>Full-stack developer, Wcoding, Seoul, South Korea</h4>
-          <p>"Career Connect" October 2024 – Present</p>
+          <h4>"Career Connect"</h4>
+
           <ul>
+            <li>Job-seeking platform connecting job seekers with companies.</li>
+            <li>Helped the team understand essential backend setup</li>
             <li>
-              Co-led a 6-person team of all different nationalities on a
-              full-stack web app project that allowed jobseekers find employment
+              Implemented a dynamic navigation bar tailored to specific user
+              profiles.
             </li>
             <li>
-              Held daily stand-ups to keep the team progressing consistently
+              Built and designed the notification system for enhanced user
+              engagement.
             </li>
+
+            <li>Created routes querying the database</li>
+            <li>Enhanced security with JWT's</li>
             <li>
-              Developed the site interface, optimized user experience, and
-              implemented routing using React.
+              Reviewed and approved code for requests and pull requests,
+              ensuring organization, quality, and adherence to project
+              standards.
             </li>
-            <li>
-              Implemented a dynamic Navigation Bar tailored to specific user
-              profiles using React.
-            </li>
-            <li>
-              Built and designed a React-based Jobseeker Notification system for
-              enhanced user engagement.
-            </li>
-            <li>
-              Organized the project’s file structure for efficiency and
-              maintainability
-            </li>
-            <li>
-              Helped the team understand essential backend setup with MySQL and
-              Flask
-            </li>
-            <li>
-              Created Flask routes querying the database with python securely
-              using JWTs
-            </li>
-            <li>
-              Reviewed and approved code for merge requests and pull requests on
-              GitHub, ensuring quality and adherence to project standards.
-            </li>
-            <li>
-              Refactored code for deployment with AWS EC2 instances using Nginx
-              and Gunicorn
-            </li>
-            <li>
-              Refactoring, removing redundant code for scalibility, management,
-              security, and improved user experience
-            </li>
+            <li>Handled deployment and server configuations.</li>
           </ul>
-          <h4>Frontend React+Vite Developement</h4>
-          <p>"My Landing Page" October 2024 – Present</p>
+          <h4>"My Landing Page"</h4>
+
           <ul>
-            <li>Created and deployed my own landing page</li>
             <li>
-              Practice using modals, scrollable carousels, html-to-pdf
-              converters
+              Designed, created, and deployed my own full-stack landing page.
             </li>
             <li>
-              Showcase my ability to use pre-written code (interactive
-              background) to merge with my own while maintaining all
-              functionality
+              Built to allow visitors to demo the apps I create and give access
+              to the code.
             </li>
-            <li>Practice styling with SCSS and creating responsive pages</li>
             <li>
-              Designed with user experience in mind, ensuring that visitors can
-              intuitively navigate the site and easily find the information they
-              need.
+              Features my chatbot that can answer questions about me or my
+              projects.
             </li>
+            <li>
+              Features a resume editor and downloader so I can edit my resume
+              easily and have potential employers or recruiters download it.
+            </li>
+            <li>Integrated a Unity game I created.</li>
           </ul>
-          <h4>Python Sentence Transformer Chatbot</h4>
-          <p>"Virtual Assistant" January 2024</p>
+          <h4>"Python Sentence-Transformer Chatbot"</h4>
+
           <ul>
             <li>
-              A virtual assistant chatbot for interviews using Python's
+              Virtual assistant chatbot for interviews using Python's
               Huggingface sentence transformers.
             </li>
             <li>
-              Made so that it can be reused on any personal or professional site
-              with minimal set up.
+              Reusable for any personal or professional site with minimal set
+              up.
             </li>
             <li>
-              Answers questions from a user input based on the information it
-              was trained on.
+              Answers questions based on the information it was trained on.
             </li>
             <li>
               Explored the wide variety of projects and models on Huggingface.
@@ -212,8 +191,8 @@ function MyCV() {
               cosine similarity
             </li>
           </ul>
-          <h4>Unity + C# Developement</h4>
-          <p>"Flappy Bird Remake" December 2024</p>
+          <h4>"Flappy Bird Remake"</h4>
+
           <ul>
             <li>Familiarized myself with basic Unity and C#</li>
             <li>
@@ -276,13 +255,13 @@ function MyCV() {
             </li>
 
             <li>
-              University of Maryland UC, Business Administration (3.0 GPA)July
+              University of Maryland UC, Business Administration (3.0 GPA) July
               2013 – March 2014
             </li>
 
             <li>
-              Virginia Commonwealth University, Business Administration and
-              Criminology (3.0 GPA) August 2012 – May 2013
+              Virginia Commonwealth University, Criminal Justice (3.0 GPA)
+              August 2012 – May 2013
             </li>
             <li>
               Randolph-Macon Academy, College-Prep Military Boarding School (3.5
