@@ -37,8 +37,10 @@ function MyCV() {
           <ul>
             <li>HTML</li>
             <li>CSS</li>
-            <li>React</li>
+            <li>Javascript</li>
             <li>Python</li>
+            <li>React</li>
+
             <li>MySQL</li>
             <li>AWS EC2</li>
             <li>Git</li>
