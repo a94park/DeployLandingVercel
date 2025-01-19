@@ -9,14 +9,13 @@ const Chatbot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const chatBoxRef = useRef(null);
   const inputRef = useRef(null);
-  const apiUrl = process.env.VITE_BACKEND_API_URL;
 
   const handleSend = async () => {
     if (!userInput.trim()) return;
     setMessages([...messages, { sender: "user", text: userInput }]);
     setIsLoading(true);
     try {
-      const response = await fetch(`${apiUrl}/chat`, {
+      const response = await fetch(`${process.env.VITE_BACKEND_API_URL}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
