@@ -9,7 +9,7 @@ const Chatbot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const chatBoxRef = useRef(null);
   const inputRef = useRef(null);
-  const apiUrl = import.meta.env.VITE_BACKEND_API_URL;
+  const apiUrl = process.env.VITE_BACKEND_API_URL;
 
   const handleSend = async () => {
     if (!userInput.trim()) return;
