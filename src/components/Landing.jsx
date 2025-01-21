@@ -9,7 +9,7 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 20 Jan 2025</div>
+      <div className="last-update">Last update: 21 Jan 2025</div>
       <div className="about-section">
         <h1>Abraham Park</h1>
         <h2>
@@ -17,7 +17,8 @@ const Landing = () => {
           and Operations
         </h2>
         <h3>
-          Re-exploring Huggingface for a less cpu heavy model for my chatbot.
+          Career Connect Demo Live Again! <br /> Virtual Assistance Chatbot
+          Live! <br /> Currently exploring Sails.js
           <br /> Also learning VIM and still trying to do 3-5 LeetCode problems
           a day.
         </h3>
