@@ -15,7 +15,7 @@ const Chatbot = () => {
     setMessages([...messages, { sender: "user", text: userInput }]);
     setIsLoading(true);
     try {
-      const response = await fetch(`${process.env.VITE_BACKEND_API_URL}/chat`, {
+      const response = await fetch(`${process.env.API_URL}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -12,7 +12,10 @@ const Landing = () => {
       <div className="last-update">Last update: 20 Jan 2025</div>
       <div className="about-section">
         <h1>Abraham Park</h1>
-        <h2>Full-stack Developer</h2>
+        <h2>
+          Software Developer/Engineer && Database Administrator && Development
+          and Operations
+        </h2>
         <h3>
           Re-exploring Huggingface for a less cpu heavy model for my chatbot.
           <br /> Also learning VIM and still trying to do 3-5 LeetCode problems
