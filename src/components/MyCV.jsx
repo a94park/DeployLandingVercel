@@ -8,7 +8,7 @@ function MyCV() {
           <h1>
             <u>Abraham Park</u>
           </h1>
-          <h2>Full-stack Developer</h2>
+          <h2>Software Developer</h2>
         </div>
 
         <div className="contact-info">
@@ -17,9 +17,7 @@ function MyCV() {
             <strong>Location / Relocation:</strong>
             <br />
             Seoul, South Korea /<br />
-            Denver, Colorado
-            <br />
-            Ft. Lauderdale, FL
+            Anywhere, USA
           </p>
           <p>
             <strong>Phone number:</strong>
@@ -42,16 +40,20 @@ function MyCV() {
             <li>React</li>
 
             <li>MySQL</li>
-            <li>AWS EC2</li>
+            <li>AWS EC2, IAM, Route53</li>
+            <li>Lighsail</li>
             <li>Git</li>
             <li>Flask</li>
             <li>Node.js</li>
             <li>Ubuntu</li>
             <li>Vim</li>
             <li>Docker</li>
-
+            <li>Node.js</li>
             <li>App Development</li>
             <li>Unity</li>
+            <li>Machine Learning</li>
+            <li>Flutter</li>
+            <li>Mobile Development</li>
 
             <li>Classroom management & teaching</li>
             <li>Inventory management</li>
@@ -113,7 +115,7 @@ function MyCV() {
         </div>
       </div>
       <div className="right-column">
-        <h2>Full-stack Developer</h2>
+        <h2>Software Developer</h2>
         <section className="profile">
           <h3>Profile</h3>
           <p>
@@ -155,7 +157,8 @@ function MyCV() {
 
           <ul>
             <li>
-              Designed, created, and deployed my own full-stack landing page.
+              Designed, created, deployed, and manage my own landing page with a
+              backend.
             </li>
             <li>
               Built to allow visitors to demo the apps I create and give access
@@ -190,20 +193,21 @@ function MyCV() {
             </li>
             <li>
               Learned about preprocessing, fine-tuning, vector representations,
-              cosine similarity
+              cosine similarity, and other AI related concepts.
             </li>
           </ul>
           <h4>"Flappy Bird Remake"</h4>
 
           <ul>
-            <li>Familiarized myself with basic Unity and C#</li>
+            <li>Familiarized myself with basic Unity and C#.</li>
             <li>
               Implemented the Start Screen logic so the game session knows when
-              to begin
+              to begin.
             </li>
-            <li>Added an extra point system the main game does not have</li>
+            <li>Added an extra point system the main game does not have.</li>
             <li>
-              Adjusted the speed to make the game more challenging and enjoyable
+              Adjusted the speed to make the game more challenging and
+              enjoyable.
             </li>
           </ul>
         </section>
@@ -214,7 +218,7 @@ function MyCV() {
           <ul>
             <li>
               Created lessons that improved students' English skills across all
-              levels
+              levels.
             </li>
 
             <li>
@@ -223,7 +227,7 @@ function MyCV() {
             </li>
             <li>
               Advanced 10% of my students to higher level classes while the
-              average was 5%
+              average was 5%.
             </li>
           </ul>
           <h4>
@@ -234,11 +238,11 @@ function MyCV() {
           <ul>
             <li>
               Managed inventory and restocking in supermarkets, ensuring smooth
-              supply chain operations
+              supply chain operations.
             </li>
             <li>
               Developed strong organizational and time-management skills by
-              balancing diverse part-time positions
+              balancing diverse part-time positions.
             </li>
           </ul>
         </section>

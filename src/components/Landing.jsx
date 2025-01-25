@@ -18,7 +18,8 @@ const Landing = () => {
         </h2>
         <h3>
           Career Connect Demo Live Again! <br /> Virtual Assistance Chatbot
-          Live! <br /> Currently exploring Sails.js
+          Live! <br /> Currently exploring mobile app development with Flutter
+          and Firebase.
           <br /> Also learning VIM and still trying to do 3-5 LeetCode problems
           a day.
         </h3>
