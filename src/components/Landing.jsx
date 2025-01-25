@@ -9,7 +9,7 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 21 Jan 2025</div>
+      <div className="last-update">Last update: 25 Jan 2025</div>
       <div className="about-section">
         <h1>Abraham Park</h1>
         <h2>
