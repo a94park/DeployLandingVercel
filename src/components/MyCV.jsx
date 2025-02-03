@@ -40,19 +40,25 @@ function MyCV() {
             <li>React</li>
 
             <li>MySQL</li>
+            <li>PostgreSQL</li>
+
+            <li>Git</li>
+            <li>Azure</li>
             <li>AWS EC2, IAM, Route53</li>
             <li>Lighsail</li>
-            <li>Git</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Ubuntu</li>
+
+            <li>FastAPI</li>
             <li>Flask</li>
             <li>Node.js</li>
-            <li>Ubuntu</li>
+            <li>Flutter</li>
+
             <li>Vim</li>
-            <li>Docker</li>
-            <li>Node.js</li>
             <li>App Development</li>
             <li>Unity</li>
             <li>Machine Learning</li>
-            <li>Flutter</li>
             <li>Mobile Development</li>
 
             <li>Classroom management & teaching</li>
@@ -249,6 +255,10 @@ function MyCV() {
         <section className="education">
           <h3>Education</h3>
           <ul>
+            <li>
+              Backend and DevOps Bootcamp, CodeSeoul - FastApi, PostgreSQL,
+              Docker, Azure, Kubernetes{" "}
+            </li>
             <li>
               Full-stack Development Certification, Wcoding, Seoul, South Korea
             </li>
