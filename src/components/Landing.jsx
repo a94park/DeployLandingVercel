@@ -9,17 +9,20 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 3 Feb 2025</div>
+      <div className="last-update">Last update: 21 Feb 2025</div>
       <div className="about-section">
-        <h1>Abraham Park</h1>
+        <h1>ABRAHAM PARK</h1>
         <h2>
-          Software Developer/Engineer && Database Administrator && Development
-          and Operations
+          Software Developer/Engineer
+          <br />
+          Database Administrator
+          <br />
+          Development and Operations
         </h2>
         <h3>
-          Career Connect Demo Live Again! <br /> Virtual Assistance Chatbot
-          Live! <br /> Currently exploring mobile app development with Flutter
-          and Firebase.
+          Career Connect Demo will be live again early March! <br /> Virtual
+          Assistance Chatbot Live! <br /> Currently exploring mobile app
+          development with Flutter and Firebase.
           <br /> Also learning VIM and still trying to do 3-5 LeetCode problems
           a day.
         </h3>

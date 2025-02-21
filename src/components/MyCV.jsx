@@ -49,6 +49,7 @@ function MyCV() {
             <li>Docker</li>
             <li>Kubernetes</li>
             <li>Ubuntu</li>
+            <li>CI/CD</li>
 
             <li>FastAPI</li>
             <li>Flask</li>
