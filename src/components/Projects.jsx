@@ -15,9 +15,9 @@ function Projects() {
         "A simpler, more modern approach to connect businesses with jobseekers",
       details:
         "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Deployed using AWS EC2. The pre-deployed code is on Github.",
-      bugs: "Known Bugs: Styling/responsiveness, Employer notifications, Employer job viewer. As I am using AWS EC2, the server may be down after the free tier limit is reached. Demo is LIVE! as of 1/20/2025",
+      bugs: "Known Bugs: Styling/mobile responsiveness, Employer notifications, Employer job viewer. As I am using AWS EC2, the server may be down after the free tier limit is reached. Demo is LIVE! as of 3/4/2025",
       githubLink: "https://github.com/a94park/Career-Connect",
-      liveLink: "http://13.125.221.0/",
+      liveLink: "http://3.34.178.193/",
       bgpic: "/banner2.jpg",
     },
     {
