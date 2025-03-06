@@ -18,28 +18,58 @@
     text-align: left;
   }
   .about-section {
+    width: 100%;
+    padding: 100px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    // flex-direction: column;
     align-items: center;
     margin: 5%;
     line-height: 30px;
+    // background-color: rgba(177, 252, 173, 0.2);
+    .left-about {
+      display: flex;
+      flex-direction: column;
+
+      height: auto;
+      margin: 70px;
+    }
+    .right-about {
+      pointer-events: auto;
+    }
     h1 {
+      font-family: "JetBrains Mono", monospace;
+      pointer-events: auto;
+      font-size: 100px;
+      line-height: 100px;
+      // align-content: center;
       margin-bottom: 50px;
     }
     h2 {
-      margin-bottom: 20px;
-      line-height: 50px;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    }
-    h3 {
-      padding: 10px;
       pointer-events: auto;
+      font-family: "JetBrains Mono", monospace;
+      margin-bottom: 50px;
+      line-height: 50px;
+      color: #a5ff5697;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .status {
+      margin: 20px;
+      align-content: center;
       background: rgba(43, 255, 0, 0.1);
-      width: 73%;
       border: 3px solid rgba(43, 255, 0, 0.2);
-      border-radius: 5px;
-      margin-bottom: 20px;
+      height: fit-content;
+
+      p {
+        text-align: left;
+        margin-left: 5px;
+      }
+      h3 {
+        padding: 10px;
+        pointer-events: auto;
+        height: auto;
+        border-radius: 5px;
+      }
     }
   }
   .contact-section {
@@ -47,8 +77,8 @@
     pointer-events: none;
     .social-icons a {
       pointer-events: auto;
-      margin: 0 2rem;
-      font-size: 4rem;
+      margin: 1.5rem;
+      font-size: 3.5rem;
       transition: transform 0.2s ease-in-out;
       color: #a4ff56;
 
@@ -62,7 +92,7 @@
     pointer-events: auto;
   }
   .download-cv-btn {
-    margin-bottom: 15%;
+    // margin-bottom: 15%;
     padding: 15px 25px;
     background-color: #a4ff56;
     color: #000;
@@ -195,7 +225,30 @@
 
 @media (max-width: 600px) {
   .portfolio-container {
+    overflow: hidden;
     .about-section {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 20px 50px 20px;
+      .left-about {
+        margin: 20px;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 50px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 50px;
+      }
+      .status {
+        margin: 10px;
+        h3 {
+          padding: 5px;
+        }
+      }
       margin-top: 40%;
     }
   }
