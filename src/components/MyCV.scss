@@ -108,11 +108,16 @@
 
 /* Styles for screens smaller than 768px (mobile) */
 @media (max-width: 768px) {
+  .close-modal-btn {
+    position: fixed;
+    right: 40px;
+  }
   .resume {
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 98%;
+    overflow: hidden;
 
     .left-column {
       width: 98%;
