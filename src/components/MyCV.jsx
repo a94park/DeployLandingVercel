@@ -45,11 +45,12 @@ function MyCV() {
             <li>Git</li>
             <li>Azure</li>
             <li>AWS EC2, IAM, Route53</li>
-            <li>Lighsail</li>
+            <li>Lightsail</li>
             <li>Docker</li>
             <li>Kubernetes</li>
             <li>Ubuntu</li>
             <li>CI/CD</li>
+            <li>Stripe</li>
 
             <li>FastAPI</li>
             <li>Flask</li>
@@ -61,6 +62,7 @@ function MyCV() {
             <li>Unity</li>
             <li>Machine Learning</li>
             <li>Mobile Development</li>
+            <li>Payment Processing</li>
 
             <li>Classroom management & teaching</li>
             <li>Inventory management</li>
@@ -137,6 +139,34 @@ function MyCV() {
         </section>
         <section className="prog-experience">
           <h3>Programming Experience</h3>
+          <h4>"Enterprise-Level Backend/Dev-Ops for E-Commerce"</h4>
+          <ul>
+            <li>
+              Developed a scalable and robust backend for an e-commerce
+              platform, ensuring high performance and reliability.
+            </li>
+
+            <li>
+              Deployed infrastructure for automated and scalable provisioning.
+            </li>
+
+            <li>
+              Designed and implemented a database schema to streamline
+              integration and data consistency.
+            </li>
+            <li>
+              Developed RESTful API end-points for the e-commerce platform.
+            </li>
+
+            <li>
+              Implemented logging and monitoring to improve debugging and system
+              observability.
+            </li>
+            <li>
+              (FastAPI, PostgreSQL, Azure, Terraform, Docker, Kubernetes,
+              Prometheus, Grafana, Github Actions)
+            </li>
+          </ul>
           <h4>"Career Connect"</h4>
 
           <ul>
@@ -159,6 +189,7 @@ function MyCV() {
               standards.
             </li>
             <li>Handled deployment and server configuations.</li>
+            <li>(React, Flask, AWS)</li>
           </ul>
           <h4>"My Landing Page"</h4>
 
@@ -180,6 +211,8 @@ function MyCV() {
               easily and have potential employers or recruiters download it.
             </li>
             <li>Integrated a Unity game I created.</li>
+            <li>Integrated payment processing.</li>
+            <li>(React, Flask, AWS Lightsail, Stripe)</li>
           </ul>
           <h4>"Python Sentence-Transformer Chatbot"</h4>
 
@@ -257,11 +290,10 @@ function MyCV() {
           <h3>Education</h3>
           <ul>
             <li>
-              Backend and DevOps Bootcamp, CodeSeoul - FastApi, PostgreSQL,
-              Docker, Azure, Kubernetes{" "}
+              Backend and DevOps Bootcamp, CodeSeoul - Seoul, South Korea{" "}
             </li>
             <li>
-              Full-stack Development Certification, Wcoding, Seoul, South Korea
+              Full-stack Development Certification, Wcoding - Seoul, South Korea
             </li>
             <li>
               Udemy Online - Advanced Javascript, Data Science and Machine

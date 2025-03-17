@@ -209,7 +209,9 @@
     margin-bottom: 1rem;
   }
 }
-
+.payments {
+  pointer-events: auto;
+}
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity 1000ms ease-in-out;

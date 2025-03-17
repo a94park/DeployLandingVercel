@@ -4,13 +4,14 @@ import SkillsCarousel2 from "./SkillsCarousel2.jsx";
 import Projects from "./Projects.jsx";
 import Flappy from "./Flappy.jsx";
 import Chatbot from "./Chatbot.jsx";
+import PaymentForm from "./Stripe.jsx";
 import "@fontsource/jetbrains-mono";
 // import Suggestions from "./Suggestions.jsx";
 import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 4 March 2025</div>
+      <div className="last-update">Last update: 17 March 2025</div>
       <div className="about-section">
         <div className="left-about">
           <div>
@@ -57,10 +58,11 @@ const Landing = () => {
           <div className="status">
             <p>Status:</p>
             <h3>
-              Career Connect Demo is live as of March 4th 2025!
-              <br /> Virtual Assistance Chatbot Live! <br /> Currently exploring
-              mobile app development with Flutter and Firebase.
-              <br /> Also learning VIM and still trying to do 3-5 LeetCode
+              - Career Connect Demo is live as of March 4th 2025!
+              <br />- Virtual Assistance Chatbot Live! <br />- Currently
+              exploring mobile app development with Flutter and Firebase. <br />
+              - Stripe Payment Integration Soon!
+              <br />- Also learning VIM and still trying to do 3-5 LeetCode
               problems a day.
             </h3>
           </div>
@@ -74,7 +76,7 @@ const Landing = () => {
       <div className="flappy">
         <Flappy />
       </div>
-
+      <PaymentForm />
       {/* <Suggestions /> */}
     </div>
   );
