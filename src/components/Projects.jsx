@@ -38,7 +38,7 @@ function Projects() {
       description:
         "Instead of following the usual landing page templates I wanted to showcase my ability to work with pre written code.",
       details:
-        "I created and deployed my own landing page using React and Vercel, incorporating features such as modals, scrollable carousels, and HTML-to-PDF converters. This project allowed me to showcase my ability to integrate pre-written code, like an interactive background, with my own while maintaining full functionality. Additionally, I practiced styling with SCSS and focused on designing a responsive, user-friendly layout to ensure visitors could easily navigate the site and find the information they needed.",
+        "I created and deployed my own landing page using React and Vercel, incorporating features such as accepting donations, resume downloads, and chatbots. This project allowed me to showcase my ability to integrate pre-written code, like an interactive background, with my own while maintaining full functionality. Additionally, I practiced styling with SCSS and focused on designing a responsive, user-friendly layout to ensure visitors could easily navigate the site and find the information they needed.",
       bugs: "Will be adding to this every now and then and when I am able to deploy my new projects.",
       githubLink: "https://github.com/a94park/DeployLandingVercel",
       // liveLink: "",
@@ -55,6 +55,18 @@ function Projects() {
       githubLink: "https://github.com/a94park/python_sent_transformer",
       // liveLink: "",
       bgpic: "/chatbot.png",
+    },
+
+    {
+      id: 5,
+      title: "Stripe Integration",
+      description: "Setup a Stripe to accept custom payments.",
+      details:
+        "Created with a React front end and Flask backend, and deployed on an AWS EC2 instance. The backend is set up to accept custom payment amounts and return a Stripe checkout session URL. The front end is set up to redirect to the Stripe checkout page with the session URL. The backend is set up to accept the Stripe webhook event and return a success URL to redirect to after payment is successful.",
+      bugs: "No live link, but is LIVE on my landing page. Look for the DONATE button. Caution: This is a real payment system.",
+      githubLink: "https://github.com/a94park/Stripe-React-Flask",
+      // liveLink: "",
+      bgpic: "/stripe-pic.png",
     },
   ];
 

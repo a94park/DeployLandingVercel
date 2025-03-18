@@ -12,7 +12,7 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 17 March 2025</div>
+      <div className="last-update">Last update: 18 March 2025</div>
       <div className="about-section">
         <div className="left-about">
           <div>
@@ -60,13 +60,14 @@ const Landing = () => {
             <p>Status:</p>
             <h3>
               - Career Connect Demo is live as of March 4th 2025!
-              <br />- Virtual Assistance Chatbot Live! <br />- Currently
+              <br />- Virtual Assistant Chatbot Live! <br />- Currently
               exploring mobile app development with Flutter and Firebase. <br />
-              - Stripe Payment Integration Soon!
+              - Now accepting donations through Stripe!
               <br />- Also learning VIM and still trying to do 3-5 LeetCode
               problems a day.
             </h3>
-          </div>
+          </div>{" "}
+          <Stripe2 />
         </div>
       </div>
 
@@ -79,7 +80,6 @@ const Landing = () => {
       </div>
       {/* <PaymentForm /> */}
       {/* <Suggestions /> */}
-      <Stripe2 />
     </div>
   );
 };

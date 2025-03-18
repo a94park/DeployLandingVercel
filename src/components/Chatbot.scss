@@ -90,6 +90,8 @@
 .toggle-chat-button {
   padding: 10px 20px;
   background-color: #a4ff56;
+  box-shadow: 0 4px 20px rgba(164, 255, 86, 0.7);
+  animation: pulse-shadow 1.5s infinite;
   color: #000;
   border: none;
   border-radius: 4px;
@@ -100,8 +102,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 4px 20px rgba(164, 255, 86, 0.7);
-  animation: pulse-shadow 1.5s infinite;
+
   pointer-events: auto;
   z-index: 10;
 
