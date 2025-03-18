@@ -4,7 +4,8 @@ import SkillsCarousel2 from "./SkillsCarousel2.jsx";
 import Projects from "./Projects.jsx";
 import Flappy from "./Flappy.jsx";
 import Chatbot from "./Chatbot.jsx";
-import PaymentForm from "./Stripe.jsx";
+// import PaymentForm from "./Stripe.jsx";
+import Stripe2 from "./Stripe2.jsx";
 import "@fontsource/jetbrains-mono";
 // import Suggestions from "./Suggestions.jsx";
 import "./Landing.scss";
@@ -76,8 +77,9 @@ const Landing = () => {
       <div className="flappy">
         <Flappy />
       </div>
-      <PaymentForm />
+      {/* <PaymentForm /> */}
       {/* <Suggestions /> */}
+      <Stripe2 />
     </div>
   );
 };
