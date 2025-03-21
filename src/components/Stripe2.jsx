@@ -21,7 +21,8 @@ export default function Stripe2() {
     const backendUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
     try {
-      console.log("Sending request with amount:", paymentAmount); // Debugging log
+      // console.log("Sending request with amount:", paymentAmount);
+      // Debugging log
       const response = await fetch(`${backendUrl}/test_key`, {
         method: "POST",
         headers: {
@@ -30,11 +31,13 @@ export default function Stripe2() {
         body: JSON.stringify({ amount: paymentAmount }),
       });
 
-      console.log("Response status:", response.status); // Debugging log
+      // console.log("Response status:", response.status);
+      // Debugging log
 
       if (!response.ok) {
         const errorText = await response.text();
-        console.error("Response error details:", errorText); // Debugging log
+        // console.error("Response error details:", errorText);
+        // Debugging log
         throw new Error("Network response was not ok");
       }
 
