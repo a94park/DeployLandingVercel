@@ -59,7 +59,7 @@ const Landing = () => {
           <div className="status">
             <p>Status:</p>
             <h3>
-              - Career Connect Demo is live as of March 4th 2025!
+              - Career Connect Demo is down until April.
               <br />- Virtual Assistant Chatbot Live! <br />- Currently
               exploring mobile app development with Flutter and Firebase. <br />
               - Now accepting donations through Stripe!
