@@ -15,7 +15,7 @@ function Projects() {
         "A simpler, more modern approach to connect businesses with jobseekers",
       details:
         "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Deployed using AWS EC2. The pre-deployed code is on Github.",
-      bugs: "Known Bugs: Styling/mobile responsiveness, Employer notifications, Employer job viewer. As I am using AWS EC2, the server may be down after the free tier limit is reached. Demo is LIVE! as of 3/4/2025",
+      bugs: "Known Bugs: Styling/mobile responsiveness, Employer notifications, Employer job viewer. As I am using AWS EC2, the server may be down after the free tier limit is reached. Demo is down for the rest of March 2025, Will be back up in April.",
       githubLink: "https://github.com/a94park/Career-Connect",
       liveLink: "http://3.34.178.193/",
       bgpic: "/banner2.jpg",
@@ -60,9 +60,9 @@ function Projects() {
     {
       id: 5,
       title: "Stripe Integration",
-      description: "Setup a Stripe to accept custom payments.",
+      description: "Stripe API integration, custom payments.",
       details:
-        "Created with a React front end and Flask backend, and deployed on an AWS EC2 instance. The backend is set up to accept custom payment amounts and return a Stripe checkout session URL. The front end is set up to redirect to the Stripe checkout page with the session URL. The backend is set up to accept the Stripe webhook event and return a success URL to redirect to after payment is successful.",
+        "Created with a React front end and Flask backend, and deployed on an AWS EC2 instance. The front end is set up to redirect to the Stripe checkout page with the session URL. The backend is set up to accept the Stripe webhook event and return a success URL to redirect to after payment is successful.",
       bugs: "No live link, but is LIVE on my landing page. Look for the DONATE button. Caution: This is a real payment system.",
       githubLink: "https://github.com/a94park/Stripe-React-Flask",
       // liveLink: "",
