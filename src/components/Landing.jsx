@@ -12,7 +12,7 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 7 April 2025</div>
+      <div className="last-update">Last update: 21 April 2025</div>
       <div className="about-section">
         <div className="left-about">
           <div>
@@ -59,9 +59,21 @@ const Landing = () => {
           <div className="status">
             <p>Status:</p>
             <h3>
-              - Career Connect Demo is LIVE!
+              The following features requiring backend support are currently
+              disabled.
+              <br />
+              - Payment through Stripe
+              <br />
+              - AI Interview Chatbot
+              <br />
+              - Career Connect Demo
+              <br />
+              <br />
+              Backend support will be back online once a suitable hosting
+              alternative is secured.
+              {/* - Career Connect Demo is LIVE!
               <br />- Virtual Assistant Chatbot Live!
-              <br />- Now accepting payments through Stripe!
+              <br />- Now accepting payments through Stripe! */}
             </h3>
           </div>{" "}
           <Stripe2 />

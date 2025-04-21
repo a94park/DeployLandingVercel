@@ -15,7 +15,7 @@ function Projects() {
         "A simpler, more modern approach to connect businesses with jobseekers",
       details:
         "A full-stack web application using React, MySQL, and Flask, with JWT for secure authentication. Deployed using AWS EC2. The pre-deployed code is on Github.",
-      bugs: "Known Bugs: Styling/mobile responsiveness, Employer notifications, Employer job viewer. As I am using AWS EC2, the server may be down after the free tier limit is reached. Demo is LIVE!",
+      bugs: "Known Bugs: Styling/mobile responsiveness, Employer notifications, Employer job viewer. As I am using AWS EC2, the server may be down after the free tier limit is reached. Demo is down.",
       githubLink: "https://github.com/a94park/Career-Connect",
       liveLink: "http://54.180.117.152/",
       bgpic: "/banner2.jpg",
@@ -51,7 +51,7 @@ function Projects() {
         "A chatbot that is trained with a context file and will answer questions based on the context.",
       details:
         "Created with a React front end and python backend, using python's huggingface sentence transformer. Made to be used as any virtual assistant would be used. Can be demoed on my landing page here. It is trained on interview questions and will answer based on my resume and some other personal information. ",
-      bugs: "Still figuring out how to better fine-tune the model and deploying the backend. No Live Demo link, but can be demoed on my landing page.",
+      bugs: "Still figuring out how to better fine-tune the model and deploying the backend. No Live Demo link, backend is down.",
       githubLink: "https://github.com/a94park/python_sent_transformer",
       // liveLink: "",
       bgpic: "/chatbot.png",
@@ -63,7 +63,7 @@ function Projects() {
       description: "Stripe API integration, custom payments.",
       details:
         "Created with a React front end and Flask backend, and deployed on an AWS EC2 instance. The front end is set up to redirect to the Stripe checkout page with the session URL. The backend is set up to accept the Stripe webhook event and return a success URL to redirect to after payment is successful.",
-      bugs: "No live link, but is LIVE on my landing page. Look for the DONATE button. Caution: This is a real payment system.",
+      bugs: "No live link, but is LIVE on my landing page. Look for the DONATE button. Caution: This is a real payment system. Currently not available.",
       githubLink: "https://github.com/a94park/Stripe-React-Flask",
       // liveLink: "",
       bgpic: "/stripe-pic.png",
