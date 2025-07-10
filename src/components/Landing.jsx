@@ -12,7 +12,7 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="portfolio-container">
-      <div className="last-update">Last update: 14 May 2025</div>
+      <div className="last-update">Last update: 10 July 2025</div>
       <div className="about-section">
         <div className="left-about">
           <div>
@@ -71,6 +71,10 @@ const Landing = () => {
               <br />
               Backend support will be back online once a suitable hosting
               alternative is secured.
+              <br />
+              <br />
+              Migrating from Vercel/AWS to a self-hosted solution. Please check
+              back soon for updates.
               {/* - Career Connect Demo is LIVE!
               <br />- Virtual Assistant Chatbot Live!
               <br />- Now accepting payments through Stripe! */}

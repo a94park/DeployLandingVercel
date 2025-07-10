@@ -29,7 +29,7 @@ const ViewDownloadCV = () => {
   return (
     <div>
       <button onClick={openModal} className="download-cv-btn">
-        <FaFilePdf /> View/Download CV
+        <FaFilePdf /> View/Download Resume
       </button>
 
       <Modal
